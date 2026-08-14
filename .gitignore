@@ -1,0 +1,5 @@
+*.o
+
+search
+
+.DS_Store

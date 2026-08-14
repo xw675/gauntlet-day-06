@@ -10,8 +10,8 @@ int binarySearch(const std::vector<int>& v, int target) {
     while (lo < hi) {
         int mid = lo + (hi - lo) / 2;
         if (v[mid] == target) { return mid; }
-        else if (v[mid] > target) { lo = mid + 1; }
-        else { hi = mid - 1; }
+        else if (v[mid] > target) { hi = mid + 1; }
+        else { lo = mid - 1; }
     }
     return -1;
 }
